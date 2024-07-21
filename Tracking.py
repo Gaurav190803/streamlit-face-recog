@@ -31,7 +31,7 @@ st.write(WEBCAM_PROMPT)
 webrtc_ctx = webrtc_streamer(
     key="object-detection",
     rtc_configuration={
-    # "iceServers": get_ice_servers(),
+    "iceServers": get_ice_servers(),
     },
     video_processor_factory=video_processor,
     async_processing=True,
